@@ -11,13 +11,18 @@ def play(word):
     guessed_letters = []
     guessed_words = []
     tries = 6
-
-
-
-
-
-
+    print("Lets play hangman!")
+    print(display(hangman(tries)))
+    print(word_completion)
+    print("\n")
     
+
+
+
+
+
+
+
 
 def display_hangman(tries):
     stages = [  # final state: head, torso, both arms, and both legs
