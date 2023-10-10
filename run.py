@@ -1,21 +1,22 @@
 import random
 from words import word_list
 
+
 def main_menu():
     """
     Function to show user a main menu with title and options to begin gameplay
     """
-    print(""" 
-    
-██░ ██  ▄▄▄       ███▄    █   ▄████  ███▄ ▄███▓ ▄▄▄       ███▄    █ 
-▓██░ ██▒▒████▄     ██ ▀█   █  ██▒ ▀█▒▓██▒▀█▀ ██▒▒████▄     ██ ▀█   █ 
+    print("""
+
+██░ ██  ▄▄▄       ███▄    █   ▄████  ███▄ ▄███▓ ▄▄▄       ███▄    █
+▓██░ ██▒▒████▄     ██ ▀█   █  ██▒ ▀█▒▓██▒▀█▀ ██▒▒████▄     ██ ▀█   █
 ▒██▀▀██░▒██  ▀█▄  ▓██  ▀█ ██▒▒██░▄▄▄░▓██    ▓██░▒██  ▀█▄  ▓██  ▀█ ██▒
 ░▓█ ░██ ░██▄▄▄▄██ ▓██▒  ▐▌██▒░▓█  ██▓▒██    ▒██ ░██▄▄▄▄██ ▓██▒  ▐▌██▒
 ░▓█▒░██▓ ▓█   ▓██▒▒██░   ▓██░░▒▓███▀▒▒██▒   ░██▒ ▓█   ▓██▒▒██░   ▓██░
- ▒ ░░▒░▒ ▒▒   ▓▒█░░ ▒░   ▒ ▒  ░▒   ▒ ░ ▒░   ░  ░ ▒▒   ▓▒█░░ ▒░   ▒ ▒ 
+ ▒ ░░▒░▒ ▒▒   ▓▒█░░ ▒░   ▒ ▒  ░▒   ▒ ░ ▒░   ░  ░ ▒▒   ▓▒█░░ ▒░   ▒ ▒
  ▒ ░▒░ ░  ▒   ▒▒ ░░ ░░   ░ ▒░  ░   ░ ░  ░      ░  ▒   ▒▒ ░░ ░░   ░ ▒░
- ░  ░░ ░  ░   ▒      ░   ░ ░ ░ ░   ░ ░      ░     ░   ▒      ░   ░ ░ 
- ░  ░  ░      ░  ░         ░       ░        ░         ░  ░         ░ 
+ ░  ░░ ░  ░   ▒      ░   ░ ░ ░ ░   ░ ░      ░     ░   ▒      ░   ░ ░
+ ░  ░  ░      ░  ░         ░       ░        ░         ░  ░         ░
     """)
     print("""Welcome to Hangman""")
     print("1. Start the game")
@@ -37,6 +38,7 @@ def main_menu():
         else:
             print('Please choose again from the options')
 
+
 def instructions():
     """
     Shows users the rules of hangman
@@ -44,10 +46,12 @@ def instructions():
     print("Guess a letter\n")
     print("Guess another letter\n")
     print("Think, 'what letter could be next?' \n")
-    print("Guess another letter or if you're a genius, try and guess the whole word \n")
-    print("If you run out of letters then Stickman shall be hanged by the neck until DEAD \n")
+    print("If you're a genius, try and guess the whole word \n")
+    print("If you run out of letters then Stickman \n")
+    print("shall be hanged by the neck until DEAD \n")
     input("Press enter to return to the main menu \n")
     main_menu()
+
 
 def get_word():
     """
@@ -55,6 +59,7 @@ def get_word():
     """
     word = random.choice(word_list)
     return word.upper()
+
 
 def play(word):
     """
@@ -82,7 +87,8 @@ def play(word):
                 print("Nice one,", guess, "is in the word!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_status)
-                indices = [i for i, letter in enumerate(word) if letter == guess]
+                indices = [i for i,
+                           letter in enumerate(word) if letter == guess]
                 for index in indices:
                     word_as_list[index] = guess
                 word_status = "".join(word_as_list)
@@ -108,6 +114,7 @@ def play(word):
     else:
         print("The word was " + word + ". Maybe next time!")
 
+
 def display_hangman(tries):
     """
     Displays different stages of hangman figure
@@ -129,7 +136,7 @@ def display_hangman(tries):
                    |      O
                    |     \\|/
                    |      |
-                   |     / 
+                   |     /
                    -
                 """,
                 # head, torso, and both arms
@@ -139,7 +146,7 @@ def display_hangman(tries):
                    |      O
                    |     \\|/
                    |      |
-                   |     
+                   |
                    -
                 """,
                 # head, torso, and one arm
@@ -149,7 +156,7 @@ def display_hangman(tries):
                    |      O
                    |     \\|
                    |      |
-                   |     
+                   |
                    -
                 """,
                 # head and torso
@@ -159,7 +166,7 @@ def display_hangman(tries):
                    |      O
                    |      |
                    |      |
-                   |     
+                   |
                    -
                 """,
                 # just head
@@ -167,19 +174,19 @@ def display_hangman(tries):
                    --------
                    |      |
                    |      O
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
                    -
                 """,
                 # base, pole and top of rope
                 """
                    --------
                    |      |
-                   |      
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
+                   |
                    -
                 """,
                 # base and pole
@@ -206,6 +213,7 @@ def display_hangman(tries):
     ]
     return stages[tries]
 
+
 def select_difficulty():
     """
     Allows user to select how many chances they have to complete the game
@@ -226,10 +234,15 @@ def select_difficulty():
         if choice == 'H':
             return 4
 
+
 def main():
+    """
+    Main functions of code
+    """
     main_menu()
     while input("Play Again? (Y/N) ").upper() == "Y":
         play(get_word())
+
 
 if __name__ == "__main__":
     main()
