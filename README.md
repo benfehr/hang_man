@@ -36,4 +36,16 @@ Every wrong letter chosen adds another piece of structure to the gallows. The ga
 
 ![Screenshot 2023-10-10 at 17 25 49](https://github.com/benfehr/hang_man/assets/113368691/fb11e2c6-8482-4362-88b7-02e552835898)
 
-- The user is first greeted with a main menu. The title 'Hangman' appears in ASCII Character to create 
+- The user is first greeted with a main menu. The title 'Hangman' appears in ASCII Characters, a welcome message and is then followed by 3 numberered bullet points.
+- Pressing 1 begins the game, moving the user on to the next page.
+- Pressing 2 shows the user the rules of play
+- Pressing 3 exits the game entirely
+
+## Rules
+
+![Screenshot 2023-10-10 at 17 33 06](https://github.com/benfehr/hang_man/assets/113368691/7fbaf635-1b38-466c-a238-9202513b92f6)
+
+- The rules are presented in an informal but understanding manner to the user.
+- They are all spaced out to provide an easy to read layout
+- Pressing enter will take the user back the the main menu
+
