@@ -26,7 +26,6 @@ def main_menu():
     while not can_play:
         choice = input("Please choose an option \n").upper()
         if choice == "1":
-            select_difficulty()
             play(get_word())
             can_play = True
         elif choice == "2":
