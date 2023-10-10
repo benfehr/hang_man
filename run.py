@@ -50,27 +50,6 @@ def instructions():
     input("Press enter to return to the main menu \n")
     main_menu()
 
-def select_difficulty():
-    """
-    Allows user to select how many chances they have to complete the game
-    """
-    print("Choose a difficulty\n")
-    print("Type E for easy (8 Lives)\n")
-    print("Type M for medium (6 Lives)\n")
-    print("Type H for hard (4 Lives)\n")
-    can_continue = False
-
-    while not can_continue:
-        choice = input("Please choose E, M or H \n").upper()
-
-        if choice == 'E':
-            return 8
-        if choice == 'M':
-            return 6
-        if choice == 'H':
-            return 4
-
-
 def get_word():
     """
     Pulls word from words.py for the user to try and guess
@@ -227,6 +206,26 @@ def display_hangman(tries):
 
     ]
     return stages[tries]
+
+def select_difficulty():
+    """
+    Allows user to select how many chances they have to complete the game
+    """
+    print("Choose a difficulty\n")
+    print("Type E for easy (8 Lives)\n")
+    print("Type M for medium (6 Lives)\n")
+    print("Type H for hard (4 Lives)\n")
+    can_continue = False
+
+    while not can_continue:
+        choice = input("Please choose E, M or H \n").upper()
+
+        if choice == 'E':
+            return 8
+        if choice == 'M':
+            return 6
+        if choice == 'H':
+            return 4
 
 def main():
     main_menu()
