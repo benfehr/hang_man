@@ -46,7 +46,7 @@ def instructions():
     print("Guess another letter\n")
     print("Think, 'what letter could be next?'\n")
     print("Guess another letter or if you're a genius, try and guess the whole word\n")
-    print("If you run out of letters, then Mr Stickman shall be hung by the neck until they are dead\n")
+    print("If you run out of letters, then Mr Stickman shall be hanged by the neck until DEAD\n")
     input("press enter to return to main menu")
     main_menu()
 
