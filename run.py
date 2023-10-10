@@ -59,6 +59,16 @@ def select_difficulty():
     print("Type H for hard (4 Lives)")
     can_continue = False
 
+    while not = can_continue:
+        choice = input("Please choose E, M or H \n").upper()
+
+        if choice == 'E':
+            return 8
+        if choice == 'M':
+            return 6
+        if choice == 'H':
+            return 4
+
 
 def get_word():
     word = random.choice(word_list)
