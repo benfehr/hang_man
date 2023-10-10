@@ -47,6 +47,18 @@ def instructions():
     print("Guess another letter or if you're a genius, try and guess the whole word")
     print("If you run out of letters, then Mr Stickman shall be hung by the neck until they are dead")
     input("press enter to return to main menu")
+    main_menu()
+
+def select_difficulty():
+    """
+    Allows user to select how many chances they have to complete the game
+    """
+    print("Choose a difficulty")
+    print("Type E for easy (8 Lives)")
+    print("Type M for medium (6 Lives)")
+    print("Type H for hard (4 Lives)")
+    can_continue = False
+
 
 def get_word():
     word = random.choice(word_list)
