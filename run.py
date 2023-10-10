@@ -37,6 +37,17 @@ def main_menu():
         else:
             print('Please choose again from the options')
 
+def instructions():
+    """
+    Shows users the rules of hangman
+    """
+    print("Guess a letter")
+    print("Guess another letter")
+    print("Think, 'what letter could be next?' ")
+    print("Guess another letter or if you're a genius, try and guess the whole word")
+    print("If you run out of letters, then Mr Stickman shall be hung by the neck until they are dead")
+    input("press enter to return to main menu")
+
 def get_word():
     word = random.choice(word_list)
     return word.upper()
