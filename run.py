@@ -1,6 +1,12 @@
 import random
 from words import word_list
 
+def main_menu():
+    """
+    Function to show user a main menu with title and options to begin gameplay
+    """
+    
+
 def get_word():
     word = random.choice(word_list)
     return word.upper()
