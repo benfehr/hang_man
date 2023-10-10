@@ -26,6 +26,7 @@ def main_menu():
     while not can_play:
         choice = input("Please choose an option \n").upper()
         if choice == "1":
+            select_difficulty()
             play(get_word())
             can_play = True
         elif choice == "2":
@@ -85,7 +86,7 @@ def play(word):
     guessed = False
     guessed_letters = []
     guessed_words = []
-    tries = 6
+    tries = select_difficulty()
     print("Let's play!")
     print(display_hangman(tries))
     print(word_status)
@@ -131,7 +132,7 @@ def play(word):
 
 def display_hangman(tries):
     """
-    Displays different stages of hangman figure to show user how many attempts remain"
+    Displays different stages of hangman figure to show user how many attempts remain
     """
     stages = [  # end state: head, torso, both arms, and both legs
                 """
