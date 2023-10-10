@@ -47,7 +47,7 @@ def instructions():
     print("Think, 'what letter could be next?'\n")
     print("Guess another letter or if you're a genius, try and guess the whole word\n")
     print("If you run out of letters, then Mr Stickman shall be hanged by the neck until DEAD\n")
-    input("press enter to return to main menu")
+    input("Press enter to return to the main menu")
     main_menu()
 
 def select_difficulty():
@@ -126,6 +126,13 @@ def play(word):
         print(word_status)
         print("\n")
     if guessed:
+        print("""
+ ██████  ██████  ███    ██  ██████  ██████   █████  ████████ ██    ██ ██       █████  ████████ ██  ██████  ███    ██ ███████ ██ 
+██      ██    ██ ████   ██ ██       ██   ██ ██   ██    ██    ██    ██ ██      ██   ██    ██    ██ ██    ██ ████   ██ ██      ██ 
+██      ██    ██ ██ ██  ██ ██   ███ ██████  ███████    ██    ██    ██ ██      ███████    ██    ██ ██    ██ ██ ██  ██ ███████ ██ 
+██      ██    ██ ██  ██ ██ ██    ██ ██   ██ ██   ██    ██    ██    ██ ██      ██   ██    ██    ██ ██    ██ ██  ██ ██      ██    
+ ██████  ██████  ██   ████  ██████  ██   ██ ██   ██    ██     ██████  ███████ ██   ██    ██    ██  ██████  ██   ████ ███████ ██ 
+ """)
         print(" You saved Mr Stickman! Well done you absolute hero!")
     else:
         print("""
