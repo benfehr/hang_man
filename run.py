@@ -222,11 +222,9 @@ def display_hangman(tries):
     return stages[tries]
 
 def main():
-    word = get_word()
-    play(word)
+    main_menu()
     while input("Play Again? (Y/N) ").upper() == "Y":
-        word = get_word()
-        play(word)
+        play(get_word())
 
 if __name__ == "__main__":
     main()
