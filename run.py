@@ -126,7 +126,7 @@ def play(word):
         print(word_status)
         print("\n")
     if guessed:
-        print("Well done! You saved Mr Stickman, you win!")
+        print(" You saved Mr Stickman! Well done you absolute hero!")
     else:
         print("""
 ▓██   ██▓ ▒█████   █    ██     ██ ▄█▀ ██▓ ██▓     ██▓    ▓█████ ▓█████▄     ███▄ ▄███▓ ██▀███       ██████ ▄▄▄█████▓ ██▓ ▄████▄   ██ ▄█▀ ███▄ ▄███▓ ▄▄▄       ███▄    █ 
