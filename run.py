@@ -152,7 +152,7 @@ def play(word):
 
 def display_hangman(tries):
     """
-    Displays different stages of hangman figure to show user how many attempts remain
+    Displays different stages of hangman figure
     """
     stages = [  # end state: head, torso, both arms, and both legs
                 """
