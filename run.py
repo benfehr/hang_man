@@ -17,7 +17,25 @@ def main_menu():
  ░  ░░ ░  ░   ▒      ░   ░ ░ ░ ░   ░ ░      ░     ░   ▒      ░   ░ ░ 
  ░  ░  ░      ░  ░         ░       ░        ░         ░  ░         ░ 
     """)
-    
+    print("""Welcome to Hangman""")
+    print("1. Start the game")
+    print("2. View the rules")
+    print("3. Exit")
+    can_play = False
+
+    while not can_play:
+        choice = input("Please choose an option \n").upper()
+        if choice == "1":
+            play(get_word())
+            can_play = True
+        elif choice == "2":
+            instructions()
+            can_play = True
+        elif choice == "3"
+            print("So long, farewell, auf wiedersehen goodbye ")
+            exit()
+        else:
+            print('Please choose again from the options')
 
 def get_word():
     word = random.choice(word_list)
