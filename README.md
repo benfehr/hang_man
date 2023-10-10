@@ -49,3 +49,19 @@ Every wrong letter chosen adds another piece of structure to the gallows. The ga
 - They are all spaced out to provide an easy to read layout
 - Pressing enter will take the user back the the main menu
 
+## Difficulty
+
+![Screenshot 2023-10-10 at 17 47 03](https://github.com/benfehr/hang_man/assets/113368691/8c2b9f48-260e-4439-8769-47948a55de38)
+
+- After pressing 1, the user will be presented with a choice of difficulty
+- The user is prompted to type either E, M or H to dictate how many chances they'll have to guess the word
+
+## Hangman Visual Queue
+
+![Screenshot 2023-10-10 at 17 49 57](https://github.com/benfehr/hang_man/assets/113368691/cd1849ef-72c6-4c95-85ba-cd644689c998)
+
+- As you can see the stickman figure gains appendages for each life lost, ultimately resulting in a full image of the stickman hanging
+
+![Screenshot 2023-10-10 at 17 53 49](https://github.com/benfehr/hang_man/assets/113368691/dd66d555-8b6e-40a5-811c-b2839eaa6229)
+
+- The game starts with just the pole from the gallows and a blank bar of text underneath
