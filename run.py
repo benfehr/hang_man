@@ -41,11 +41,11 @@ def instructions():
     """
     Shows users the rules of hangman
     """
-    print("Guess a letter")
-    print("Guess another letter")
-    print("Think, 'what letter could be next?' ")
-    print("Guess another letter or if you're a genius, try and guess the whole word")
-    print("If you run out of letters, then Mr Stickman shall be hung by the neck until they are dead")
+    print("Guess a letter\n")
+    print("Guess another letter\n")
+    print("Think, 'what letter could be next?'\n")
+    print("Guess another letter or if you're a genius, try and guess the whole word\n")
+    print("If you run out of letters, then Mr Stickman shall be hung by the neck until they are dead\n")
     input("press enter to return to main menu")
     main_menu()
 
@@ -59,7 +59,7 @@ def select_difficulty():
     print("Type H for hard (4 Lives)")
     can_continue = False
 
-    while not = can_continue:
+    while not can_continue:
         choice = input("Please choose E, M or H \n").upper()
 
         if choice == 'E':
@@ -100,7 +100,7 @@ def play(word):
                 tries -= 1
                 guessed_letters.append(guess)
             else:
-                print("Good job,", guess, "is in the word!")
+                print("Nice one,", guess, "is in the word!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_status)
                 indices = [i for i, letter in enumerate(word) if letter == guess]
