@@ -46,7 +46,7 @@ def instructions():
     print("Guess another letter\n")
     print("Think, 'what letter could be next?' \n")
     print("Guess another letter or if you're a genius, try and guess the whole word \n")
-    print("If you run out of letters, then Mr Stickman shall be hanged by the neck until DEAD \n")
+    print("If you run out of letters then Stickman shall be hanged by the neck until DEAD \n")
     input("Press enter to return to the main menu \n")
     main_menu()
 
@@ -105,7 +105,7 @@ def play(word):
         print(word_status)
         print("\n")
     if guessed:
-        print("You saved Mr Stickman! Well done you absolute hero!")
+        print("You saved Stickman! Well done you absolute hero!")
     else:
         print("The word was " + word + ". Maybe next time!")
 
