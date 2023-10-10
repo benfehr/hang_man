@@ -25,3 +25,15 @@ Every wrong letter chosen adds another piece of structure to the gallows. The ga
 - As a user, if I accidentally guess the same letter twice, I don't want to unfairly lose a life
 - As a user, I want to be able to exit the game
 - As a user, I want to be able to guess the whole word if I think I am able to do so
+
+## Site Aims
+- Provide a mentally challenging game
+- To entertain
+- To provide a straight forward user experience
+- To provide a smooth running programme without any bugs or performance issues
+
+## Features
+
+![Screenshot 2023-10-10 at 17 25 49](https://github.com/benfehr/hang_man/assets/113368691/fb11e2c6-8482-4362-88b7-02e552835898)
+
+- The user is first greeted with a main menu. The title 'Hangman' appears in ASCII Character to create 
