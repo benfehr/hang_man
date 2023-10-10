@@ -54,10 +54,10 @@ def select_difficulty():
     """
     Allows user to select how many chances they have to complete the game
     """
-    print("Choose a difficulty")
-    print("Type E for easy (8 Lives)")
-    print("Type M for medium (6 Lives)")
-    print("Type H for hard (4 Lives)")
+    print("Choose a difficulty\n")
+    print("Type E for easy (8 Lives)\n")
+    print("Type M for medium (6 Lives)\n")
+    print("Type H for hard (4 Lives)\n")
     can_continue = False
 
     while not can_continue:
@@ -112,7 +112,7 @@ def play(word):
                     guessed = True
         elif len(guess) == len(word) and guess.isalpha():
             if guess in guessed_words:
-                print("You already guessed the word", guess)
+                print("You already tried that word", guess)
             elif guess != word:
                 print(guess, "is not the word.")
                 tries -= 1
