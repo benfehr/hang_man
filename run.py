@@ -31,7 +31,7 @@ def main_menu():
         elif choice == "2":
             instructions()
             can_play = True
-        elif choice == "3"
+        elif choice == "3":
             print("So long, farewell, auf wiedersehen goodbye ")
             exit()
         else:
@@ -71,6 +71,9 @@ def select_difficulty():
 
 
 def get_word():
+    """
+    Pulls word from words.py for the user to try and guess
+    """
     word = random.choice(word_list)
     return word.upper()
 
