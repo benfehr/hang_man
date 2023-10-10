@@ -174,7 +174,7 @@ def display_hangman(tries):
                    |      O
                    |     \\|/
                    |      |
-                   |      
+                   |     
                    -
                 """,
                 # head, torso, and one arm
