@@ -126,7 +126,7 @@ def play(word):
         print(word_status)
         print("\n")
     if guessed:
-        print(" You saved Mr Stickman! Well done you absolute hero!")
+        print("You saved Mr Stickman! Well done you absolute hero!")
     else:
         print("The word was " + word + ". Maybe next time!")
 
