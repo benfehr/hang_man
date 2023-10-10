@@ -44,10 +44,10 @@ def instructions():
     """
     print("Guess a letter\n")
     print("Guess another letter\n")
-    print("Think, 'what letter could be next?'\n")
-    print("Guess another letter or if you're a genius, try and guess the whole word\n")
-    print("If you run out of letters, then Mr Stickman shall be hanged by the neck until DEAD\n")
-    input("Press enter to return to the main menu")
+    print("Think, 'what letter could be next?' \n")
+    print("Guess another letter or if you're a genius, try and guess the whole word \n")
+    print("If you run out of letters, then Mr Stickman shall be hanged by the neck until DEAD \n")
+    input("Press enter to return to the main menu \n")
     main_menu()
 
 def select_difficulty():
@@ -92,7 +92,7 @@ def play(word):
     print(word_status)
     print("\n")
     while not guessed and tries > 0:
-        guess = input("Please guess a letter or word: ").upper()
+        guess = input("Please guess a letter or a word: ").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
                 print("You already guessed the letter", guess)
