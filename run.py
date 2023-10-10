@@ -82,7 +82,7 @@ def play(word):
     """
     Function to create the logic for the game
     """
-    word_status = " _ " * len(word)
+    word_status = "_" * len(word)
     guessed = False
     guessed_letters = []
     guessed_words = []
