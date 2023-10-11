@@ -56,7 +56,7 @@ Every wrong letter chosen adds another piece of structure to the gallows. The ga
 - After pressing 1, the user will be presented with a choice of difficulty
 - The user is prompted to type either E, M or H to dictate how many chances they'll have to guess the word
 
-## Hangman Visual Queue
+## Hangman Visual Queue and Gameplay
 
 ![Screenshot 2023-10-10 at 17 49 57](https://github.com/benfehr/hang_man/assets/113368691/cd1849ef-72c6-4c95-85ba-cd644689c998)
 
@@ -65,3 +65,23 @@ Every wrong letter chosen adds another piece of structure to the gallows. The ga
 ![Screenshot 2023-10-10 at 17 53 49](https://github.com/benfehr/hang_man/assets/113368691/dd66d555-8b6e-40a5-811c-b2839eaa6229)
 
 - The game starts with just the pole from the gallows and a blank bar of text underneath
+
+![Screenshot 2023-10-11 at 09 19 04](https://github.com/benfehr/hang_man/assets/113368691/a0177b61-764e-4611-b481-1e4e8803feb2)
+
+- As the user progresses and guesses a letter correctly. they will be congratulated in the window and the letter appears on the word
+
+![Screenshot 2023-10-11 at 09 19 18](https://github.com/benfehr/hang_man/assets/113368691/15baf2b9-a160-4b62-b96c-ac772f2e5fd8)
+
+- If the user guesses incorrectly they are shown this message and are prompted to guess again
+
+![Screenshot 2023-10-11 at 09 21 05](https://github.com/benfehr/hang_man/assets/113368691/82a42a31-674d-4a43-bc06-9d711203b639)
+
+- When the user enters a letter that they have already guessed. they are shown this message and once again are prompted to guess again
+
+![Screenshot 2023-10-11 at 09 19 50](https://github.com/benfehr/hang_man/assets/113368691/77f8d4e6-6c98-4917-b784-fe9d7f748d91)
+
+- When the user fails to guess the word they are shown this message, and also the full image of the hanging man is presented. They have the option to play the game again or exit.
+
+![Screenshot 2023-10-11 at 09 29 10](https://github.com/benfehr/hang_man/assets/113368691/c3106864-2dec-4d03-9030-8717ed6ac032)
+
+- If the user successfully guesses the word, they are shown this message congratulating them. They are then also given the option to play again or quit the game.
