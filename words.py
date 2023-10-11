@@ -149,4 +149,3 @@ word_list = [
     'dream',
     'trial',
     'sword']
-    
