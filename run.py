@@ -36,7 +36,7 @@ def main_menu():
             print("So long, farewell, auf wiedersehen goodbye ")
             exit()
         else:
-            print('Please choose again from the options')
+            print('Oops thats not what we asked!')
 
 
 def instructions():
